@@ -17,7 +17,7 @@ export default function Products() {
 
       {products.map((p) => (
         <div key={p.id}>
-          {p.name} - ₹{p.price} - Stock: {p.stock}
+          {p.id} - {p.name} - ₹{p.price} - Stock: {p.stock}
         </div>
       ))}
     </ProtectedRoute>
