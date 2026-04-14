@@ -27,7 +27,7 @@ export default function Orders() {
     <ProtectedRoute>
       <h2>Orders</h2>
 
-      {orders.map((o) => (
+      {orders ? orders.map((o) => (
         <div key={o.id}>
           #{o.id} - ₹{o.total_price} - {o.status}
 
@@ -37,7 +37,9 @@ export default function Orders() {
             </button>
           )}
         </div>
-      ))}
+      )) : (
+        <p>No orders found.</p>
+      )}
     </ProtectedRoute>
   );
 }

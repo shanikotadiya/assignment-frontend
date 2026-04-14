@@ -16,7 +16,7 @@ export const apiFetch = async (url, options = {}) => {
   const data = await res.json();
 
   if (!res.ok) {
-    throw new Error(data.message || "Something went wrong");
+    console.log(data.message || "Something went wrong");
   }
 
   return data;
