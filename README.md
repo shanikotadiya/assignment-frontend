@@ -97,11 +97,7 @@ const BASE_URL = "http://localhost:5000";
 
 * User enters email & password
 * API call → `/auth/login`
-* JWT token stored in `localStorage`
-
-```js id="b1l0wr"
-localStorage.setItem("token", token);
-```
+* JWT token stored in `Cookies`
 
 ---
 
